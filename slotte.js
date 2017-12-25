@@ -143,24 +143,24 @@ $(function(){
 
 //受信処理をここに書く
 function receiveNumber(number){
-	var id = "#b-" + number;
-	if($(id).length > 0){
-		$(id).addClass("bingo-hit");
-	}
+  var id = "#b-" + number;
+  if($(id).length > 0){
+    $(id).addClass("bingo-hit");
+  }
 }
 
 $(function(){
-	//ビンゴパネルが押された場合の処理
-	$(".bingo-panel").on('click', function(){
-		if($(this).hasClass("bingo-hit")){
-			//押し間違い対策
-			$(this).removeClass("bingo-hit");
+  //ビンゴパネルが押された場合の処理
+  $(".bingo-panel").on('click', function(){
+    if($(this).hasClass("bingo-hit")){
+      //押し間違い対策
+      $(this).removeClass("bingo-hit");
       localStorage.removeItem($(this).attr("id"));
-			return;	
-		}
-		$(this).addClass("bingo-hit");
+      return;	
+    }
+    $(this).addClass("bingo-hit");
     localStorage.setItem($(this).attr("id"), $(this).attr("id"));
-	});
+  });
 });
 
 
