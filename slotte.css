@@ -1,0 +1,47 @@
+body{
+	font-family: meiryo;
+}
+
+div#slotte-area{
+	margin: 2em;
+	padding: 2em;
+	text-align: center;
+}
+
+#number-field{
+	font-size : 72px;
+}
+
+/*ここからビンゴカードエリア*/
+div.bingo-header{
+  font-size:24px;
+  text-align: center;
+}
+
+div#bingo-area{
+	font-size : 24px;
+	text-align: center;
+	margin: 2em;
+	padding: 2em;
+}
+
+table{
+  border-collapse:separate;
+  border: none;
+}
+
+td.bingo-panel{
+  border-radius: 50px 50px 50px 50px/ 50px 50px 50px 50px;
+  border: solid 11px skyblue;
+  background-color: white;
+}
+
+
+td.bingo-hit{
+	background-color: pink;
+}
+
+div#setting-area{
+	text-align: center;
+	margin: .5em;
+}
